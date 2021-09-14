@@ -1,0 +1,6 @@
+# Redirect it to the index.html but you need a web server
+# Like apache or nginx for this
+
+Options -Indexes
+
+Redirect index.html
