@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TicTacToe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+	<link rel="icon" type="image/jpg" href="../assets/img/hash.jpg">
+	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/bootstrap.js"></script>
+	<script src="../assets/js/sweetalert2.all.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+</head>
+<style type="text/css">
+	.game-area{
+		display: grid;
+	    grid-template-columns: repeat(3, auto);
+	    width: 306px;
+	    margin: 50px auto;
+	}
+	.cell{
+		font-family: "Permanent Marker", cursive;
+	    width: 100px;
+	    height: 100px;
+	    box-shadow: 0 0 0 1px #333333;
+	    border: 1px solid #333333;
+	    cursor: pointer;
+		line-height: 100px;
+	    font-size: 60px;
+
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-6 col-sm-6 p-3">
+				<h3 class="text-center">TicTacToe <small>by Chase</small></h3>
+			</div>
+		</div>
+		<div class="game-area border">
+			<div onclick="handleClick('0')" class="cell text-center cell0"></div>
+			<div onclick="handleClick('1')" class="cell text-center cell1"></div>
+			<div onclick="handleClick('2')" class="cell text-center cell2"></div>
+			<div onclick="handleClick('3')" class="cell text-center cell3"></div>
+			<div onclick="handleClick('4')" class="cell text-center cell4"></div>
+			<div onclick="handleClick('5')" class="cell text-center cell5"></div>
+			<div onclick="handleClick('6')" class="cell text-center cell6"></div>
+			<div onclick="handleClick('7')" class="cell text-center cell7"></div>
+			<div onclick="handleClick('8')" class="cell text-center cell8"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<h4>Score: X = <span id="x">0</span> | O = <span id="o">0</span></h4> <button class="btn btn-warning btn-sm" onclick="resetScore()">Reset Score</button>
+				<button class="btn btn-danger btn-lg float-right mx-1" onclick="resetGame()">Reset</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
